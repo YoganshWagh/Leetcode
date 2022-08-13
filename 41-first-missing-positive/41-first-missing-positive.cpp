@@ -12,14 +12,11 @@ public:
         int c = 1;
         while(true)
         {
-            if( sett.find(c) != sett.end() )
-            {
-                c++;
-            }
-            else
+            if( sett.find(c) == sett.end() )
             {
                 return c;
             }
+            c++;
         }
         
         return 0;
