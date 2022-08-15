@@ -1,12 +1,17 @@
 class Solution {
 public:
     bool uniqueOccurrences(vector<int>& arr) {
-        
-        map<int, int> mp, cnt;
-        for(int i : arr) ++mp[i];
-        for(auto m : mp)
-            if(++cnt[m.second] > 1) return false;
-        return true;
-        
+        unordered_map<int,int> map;
+        for(auto x:arr){
+            map[x]++;
+        }
+        unordered_set<int> set;
+        int count(0);
+        for(auto x:map){
+            count++;
+            set.insert(x.second);
+        }
+        if(count==set.size()) return true;
+        return false;
     }
 };
