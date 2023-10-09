@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/kth-largest-element-in-an-array/description/
-//IN O(NlogN) TIME COMPLEXITY:
+//IN O(NlogN) TIME COMPLEXITY
 
 class Solution {
 public:
