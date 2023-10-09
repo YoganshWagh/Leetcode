@@ -1,4 +1,5 @@
 //https://leetcode.com/problems/fizz-buzz/
+//Solution: https://leetcode.com/problems/fizz-buzz/solutions/4107006/super-easy-o-n-begineer/
 
 class Solution {
 public:
