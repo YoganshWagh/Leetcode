@@ -4,9 +4,9 @@
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
-        //FOR STORING ANAGRAMS AND THEIR ORIGINAL FORM:
+        //FOR STORING GROUPS OF ANAGRAMS:
         unordered_map<string, vector<string>> mp;
-        
+
         for( auto x : strs )
         {
             string word = x;
@@ -14,7 +14,7 @@ public:
             mp[word].push_back(x);
         }
 
-        //TO STORE GROUPED ANAGRAMS:
+        //TO STORE GROUPED ANAGRAMS IN VECTOR:
         vector< vector<string> > ans;
         for( auto x : mp )
             ans.push_back(x.second);
