@@ -8,8 +8,8 @@ public:
         for( string x : words )
             for( char y : x ) count[y -'a']++;
 
-        //all_of() ensures that all elements meet the given
-        //condition or not.
+        //all_of() ensures that all elements of count meet 
+        //the given condition or not.
         //& is used to access all outside values in lambda function.
         return all_of( begin(count), end(count), [&](int freq){
             return freq % n == 0;

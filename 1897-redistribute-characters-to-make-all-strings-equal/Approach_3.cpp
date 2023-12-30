@@ -13,8 +13,8 @@ public:
             return freq % n == 0;
         };
 
-        //all_of() ensures that all elements meet the given
-        //condition or not.
+        //all_of() ensures that all elements of count meet 
+        //the given condition or not.
         return all_of( begin(count), end(count), lambda);
     }
 };
