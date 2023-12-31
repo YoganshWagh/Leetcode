@@ -1,3 +1,5 @@
+//T.C = O(n)  &   S.C = O(26) = O(1)
+
 class Solution {
 public:
     int maxLengthBetweenEqualCharacters(string s) {
