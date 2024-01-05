@@ -1,5 +1,5 @@
 //QUESTION: https://leetcode.com/problems/longest-increasing-subsequence/description/
-//REFERENCE:
+//REFERENCE: https://youtu.be/h9rm4N8XbL0?si=X5j2pPb5F7mkhpRy
 //T.C = O(n*n)  &  S.C = O(n) 
 
 class Solution {
