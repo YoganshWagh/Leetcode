@@ -1,6 +1,6 @@
 //QUESTION: https://leetcode.com/problems/range-sum-of-bst/description/
 //REFERENCE: https://youtu.be/qIFhQ2m6i64?si=cmHkoVTN43LDaby5
-//T.C = O(n)  &&  S.C = O(n) = O(h) where 'h' is height of the tree
+//T.C = O(n)  &&  O(1) (Ignoging recursion stack space)
 
 class Solution {
 public:
