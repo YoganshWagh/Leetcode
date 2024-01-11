@@ -1,4 +1,6 @@
-//APPROACH 1: OPTIMAL SOLUTION
+//APPROACH 2: OPTIMAL SOLUTION
+//T.C = O(n)
+//S.C = O(n)
 class Solution {
 public:
     int findMaxDiff(TreeNode* root, int minV, int maxV)
