@@ -1,6 +1,6 @@
 //QUESTION: https://leetcode.com/problems/determine-if-string-halves-are-alike/description/
 //REFERENCE: https://youtu.be/oSSMo0PCQts?si=PS5sMbIWAHddNfae
-//T.C = O(N)
+//T.C = O(n)
 //S.C = O(1)
 
 //APPROACH 1: Using Function.
