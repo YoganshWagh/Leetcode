@@ -1,4 +1,4 @@
-//QUESTION: https://leetcode.com/problems/insert-delete-getrandom-o1/submissions/1147970351/
+//QUESTION: https://leetcode.com/problems/insert-delete-getrandom-o1/description/
 //REFERENCE: https://youtu.be/3yTnLrNdJGo?si=6IprWpyALFEg3JNR
 
 class RandomizedSet {
