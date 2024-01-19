@@ -1,0 +1,32 @@
+//QUESTION: https://leetcode.com/problems/minimum-falling-path-sum/description/
+//REFERENCE: https://youtu.be/EQC0ckOyEGs?si=wjWLCwAMLXRtgET2
+//T.C : O(m*n)
+//S.C :  O(m*n)
+
+//Approach-2 (Bottom UP DP) : O(m*n)
+class Solution {
+public:
+    int MFS(vector<vector<int>>& A) {
+        int m = A.size();
+        vector<vector<int>> t(m, vector<int>(m));
+        
+        //initialization
+        for(int col = 0; col<m; col++) {
+            t[0][col] = A[0][col];
+        }
+        
+        for(int row = 1; row < m; row++) {
+            for(int col = 0; col < m; col++) {
+                t[row][col] = A[row][col] + min({t[row-1][col], 
+                                                 t[row-1][max(0, col-1)], 
+                                                 t[row-1][min(m-1, col+1)]});
+            }
+        }
+
+        return *min_element(t[m-1].begin(), t[m-1].end());
+        
+    }
+    int minFallingPathSum(vector<vector<int>>& A) { 
+        return MFS(A);
+    }
+};
