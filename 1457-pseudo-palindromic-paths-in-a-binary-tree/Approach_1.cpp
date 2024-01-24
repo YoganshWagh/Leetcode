@@ -7,7 +7,7 @@
 class Solution {
 public:
     int result = 0;
-    void solve(TreeNode* root, vector<int>& count)
+    void solve(TreeNode* root, vector<int>& count)  //pass by reference so value is decremented in end.
     {
         if(root == NULL) return;
 
@@ -26,7 +26,7 @@ public:
         solve(root->left, count);
         solve(root->right, count);
 
-        count[root->val]--;
+        count[root->val]--;   //to undo changes made in count in each path traversed.
     }
 
     int pseudoPalindromicPaths (TreeNode* root) 
