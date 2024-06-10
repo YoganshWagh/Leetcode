@@ -1,45 +1,35 @@
-<h2><a href="https://leetcode.com/problems/height-checker/">1051. Height Checker</a></h2><h3>Easy</h3><hr><div><p>A school is trying to take an annual photo of all the students. The students are asked to stand in a single file line in <strong>non-decreasing order</strong> by height. Let this ordering be represented by the integer array <code>expected</code> where <code>expected[i]</code> is the expected height of the <code>i<sup>th</sup></code> student in line.</p>
 
-<p>You are given an integer array <code>heights</code> representing the <strong>current order</strong> that the students are standing in. Each <code>heights[i]</code> is the height of the <code>i<sup>th</sup></code> student in line (<strong>0-indexed</strong>).</p>
+A school is trying to take an annual photo of all the students. The students are asked to stand in a single file line in non-decreasing order by height. Let this ordering be represented by the integer array expected where expected[i] is the expected height of the ith student in line.
 
-<p>Return <em>the <strong>number of indices</strong> where </em><code>heights[i] != expected[i]</code>.</p>
+You are given an integer array heights representing the current order that the students are standing in. Each heights[i] is the height of the ith student in line (0-indexed).
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+Return the number of indices where heights[i] != expected[i].
+ 
 
-<pre><strong>Input:</strong> heights = [1,1,4,2,1,3]
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> 
-heights:  [1,1,<u>4</u>,2,<u>1</u>,<u>3</u>]
-expected: [1,1,<u>1</u>,2,<u>3</u>,<u>4</u>]
+Example 1:
+Input: heights = [1,1,4,2,1,3]
+Output: 3
+Explanation: 
+heights:  [1,1,4,2,1,3]
+expected: [1,1,1,2,3,4]
 Indices 2, 4, and 5 do not match.
-</pre>
 
-<p><strong>Example 2:</strong></p>
-
-<pre><strong>Input:</strong> heights = [5,1,2,3,4]
-<strong>Output:</strong> 5
-<strong>Explanation:</strong>
-heights:  [<u>5</u>,<u>1</u>,<u>2</u>,<u>3</u>,<u>4</u>]
-expected: [<u>1</u>,<u>2</u>,<u>3</u>,<u>4</u>,<u>5</u>]
+Example 2:
+Input: heights = [5,1,2,3,4]
+Output: 5
+Explanation:
+heights:  [5,1,2,3,4]
+expected: [1,2,3,4,5]
 All indices do not match.
-</pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre><strong>Input:</strong> heights = [1,2,3,4,5]
-<strong>Output:</strong> 0
-<strong>Explanation:</strong>
+Example 3:
+Input: heights = [1,2,3,4,5]
+Output: 0
+Explanation:
 heights:  [1,2,3,4,5]
 expected: [1,2,3,4,5]
 All indices match.
-</pre>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>1 &lt;= heights.length &lt;= 100</code></li>
-	<li><code>1 &lt;= heights[i] &lt;= 100</code></li>
-</ul>
-</div>
+ 
+Constraints:
+1 <= heights.length <= 100
+1 <= heights[i] <= 100
