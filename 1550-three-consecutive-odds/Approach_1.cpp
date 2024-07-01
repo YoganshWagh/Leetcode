@@ -8,14 +8,14 @@ public:
     {
         int k = 0; //for counting number of odds.
         for(int i=0; i<arr.size(); i++){
-            if(k == 3) 
-                return true;
-
             if(arr[i] % 2 == 1)
                 k++;
             else
                 k = 0;
+
+            if(k == 3) 
+                return true;
         }
-        return k == 3? true:false;
+        return false;
     }
 };
