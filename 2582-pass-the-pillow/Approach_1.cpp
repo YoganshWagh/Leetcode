@@ -1,5 +1,5 @@
 //QUESTION: https://leetcode.com/problems/pass-the-pillow/description/
-//Approach 1: Using Iterative approach.
+//Approach 1: Using Simulation.
 //T.C = O(n), where 'n' is input given.
 //S.C = O(1), since no extra space is used.
 class Solution {
