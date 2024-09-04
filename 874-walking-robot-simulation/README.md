@@ -8,6 +8,7 @@ Some of the grid squares are obstacles. The ith obstacle is at grid point obstac
 
 Return the maximum Euclidean distance that the robot ever gets from the origin squared (i.e. if the distance is 5, return 25).
 
+
 Note:
 North means +Y direction.
 East means +X direction.
@@ -15,6 +16,7 @@ South means -Y direction.
 West means -X direction.
 There can be obstacle in [0,0].
  
+
 
 Example 1:
 Input: commands = [4,-1,3], obstacles = []
